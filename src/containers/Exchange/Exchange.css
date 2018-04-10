@@ -27,10 +27,12 @@
 .InputEnd {
     justify-content: flex-end;
     padding-right: 20px;
+    box-sizing: border-box;
 }
 .InputStart {
     justify-content: flex-start;
     padding-left: 20px;
+    box-sizing: border-box;
 }
 
 .ExchangeInput {
@@ -60,18 +62,8 @@
     box-sizing: border-box;
 }
 
-.Button {
-    background: #C3C8CC;
-    height: 50px !important;
-    width: 250px;
-    display: flex;
-    flex-flow: column;
-    justify-content: center;
-    text-align: center;
-    cursor: pointer;
-}
-
-.Button:hover {
-    background: #BDBDBD;
-    
+@media (max-width: 600px) {
+    .ExchangeInput {
+        width: 150px;
+    }
 }

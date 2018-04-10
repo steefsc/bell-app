@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import classes from './Exchange.css';
+import Button from '../../components/UI/Button/Button';
 
 class Exchange extends Component {
    render() {
@@ -17,9 +18,7 @@ class Exchange extends Component {
                 </div>
             </div>
             <div className={classes.ButtonContainer}>
-                <div className={classes.Button}>
-                    <font style={{color: "#eee"}}>CALCULATE</font>
-                </div>
+                <Button buttonType="ButtonContent">CALCULATE</Button>
             </div>
         </div>
        )
