@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import classes from './Exchange.css';
 import Button from '../../components/UI/Button/Button';
 import CurrInput from '../../components/UI/CurrInput/CurrInput';
-import axios from '../../axios-be'
+import axios from '../../axios-be';
+import {Redirect} from 'react-router-dom';
 
 
 
@@ -16,6 +17,7 @@ class Exchange extends Component {
         toValueUI: "",
         callbackError: false
     }
+
 
     //Updateing the State
     onCurrInputKeyPress = (event, inputIden, locale) => {
@@ -94,6 +96,12 @@ class Exchange extends Component {
     }
 
     render() {
+        const authenticated = sessionStorage.getItem("auth");
+        let redirect = null;
+        if (!authenticated) {
+             redirect = <Redirect to='/'/>;
+        }
+
         let callBackDiv = null;
         if (this.state.callbackError) {
             callBackDiv = <div className={classes.ErrorDiv}>There was an error with your call</div>;
@@ -101,6 +109,7 @@ class Exchange extends Component {
         return (
             <div className={classes.Exchange}>
                 <div>
+                    {redirect}
                     {callBackDiv}
                 </div>
                 <div className={classes.InputsContainer}>

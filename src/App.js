@@ -3,7 +3,7 @@ import Layout from './hoc/Layout/Layout';
 import Content from './components/UI/Content/Content';
 import Exchange from './containers/Exchange/Exchange';
 import Auth from './containers/Auth/Auth';
-import {Route,Switch} from 'react-router-dom';
+import { Route, Switch, Redirect } from 'react-router-dom';
 class App extends Component {
   state = {
     authUser: null,
@@ -15,7 +15,8 @@ class App extends Component {
               <Content>
                   <Switch>
                       <Route path="/app/home" exact component={Exchange}></Route>
-                      <Route path="/app/login" exact component={Auth}></Route>
+                      <Route path="/" exact component={Auth}></Route>
+                      <Redirect to="/"/>
                   </Switch>
               </Content>
         </Layout>
