@@ -35,25 +35,6 @@
     box-sizing: border-box;
 }
 
-.ExchangeInput {
-    height: 20px;
-    width: 250px;
-    border-radius: 2px;
-    padding: 1px;
-    -webkit-appearance: none; 
-    -moz-appearance: none; 
-    border: 2px solid #eee; /* Here */
-}
-.InputsContainer input::placeholder{
-    color: #DADFE3;
-    justify-content: center;
-    align-items: center;
-    text-align:center;
-    font-size: 17px;
-    box-sizing: border-box;
-    padding: 1px;
-}
-
 .ButtonContainer {
     flex-flow: column;
     display: flex;
@@ -62,8 +43,22 @@
     box-sizing: border-box;
 }
 
-@media (max-width: 600px) {
-    .ExchangeInput {
-        width: 150px;
-    }
+.ErrorDiv {
+    border: 1px solid #fbe08c;
+    background: #FEECB9;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+    padding: 10px 35px;
+    margin-top: 35px;
+    color: #c95814;
+    line-height: 20px;
+    font-size: 0.7rem;
+    width: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    box-sizing: border-box; 
+    vertical-align: middle;
+    display: table
 }
+

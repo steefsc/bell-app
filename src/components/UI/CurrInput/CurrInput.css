@@ -1,0 +1,25 @@
+.CurrInput {
+    height: 20px;
+    width: 250px;
+    border-radius: 2px;
+    padding: 1px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border: 2px solid #eee; /* Here */
+}
+
+.CurrInput::placeholder{
+    color: #DADFE3;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+@media (max-width: 600px) {
+    .CurrInput {
+        width: 150px;
+    }
+}
