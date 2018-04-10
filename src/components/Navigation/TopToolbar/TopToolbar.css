@@ -1,23 +1,44 @@
 .TopToolbar {
-    height: 56px;
+    height: 125px;
     width: 100%;
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #2196F3;
+    background-color: whitesmoke;
     display: flex;
-    justify-content: space-between;
+    flex-flow: column;
     align-items: center;
-    padding: 0 10px;
+    padding: 1px; 
     box-sizing: border-box;
     z-index: 90;
     box-shadow: 0 1px 6px rgba(0,0,0,0.25), 0 1px 4px rgba(0,0,0,0.22);
 
 }
 
-
-@media (min-width: 1025px){
-    .TopToolbar {
-        padding-left: 206px;
-    }
+.UserBadge {
+    background: #BDBDBD;
+    border-radius: 25px;
+    width: 50px;
+    height: 50px;
+    position: relative;
+    top: 25%;
 }
+
+.ButtonsContent {
+    vertical-align: middle;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    display: flex;
+    justify-content: space-between;
+    box-sizing: border-box;
+    align-content: center;
+    
+}
+
+.ButtonsContent div{
+    width: 100px;
+    background: #BDBDBD;
+    height: 17px;
+}
+

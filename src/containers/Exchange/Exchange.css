@@ -1,0 +1,77 @@
+.Exchange {
+    box-sizing: border-box;
+    z-index: 90;
+    height: 300px;
+    box-shadow: 0 1px 6px rgba(0,0,0,0.25), 0 1px 4px rgba(0,0,0,0.22);
+    background: #DADFE3;
+    display: flex;
+    flex-flow: column;
+    padding: 6px;
+}
+
+.Exchange div {
+    height: 33%;
+}
+
+.InputsContainer {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
+.InputsContainer div {
+    width: 50%;
+    position: relative;
+    display: flex;
+}
+.InputEnd {
+    justify-content: flex-end;
+    padding-right: 20px;
+}
+.InputStart {
+    justify-content: flex-start;
+    padding-left: 20px;
+}
+
+.ExchangeInput {
+    height: 20px;
+    width: 250px;
+    border-radius: 2px;
+    padding: 1px;
+    -webkit-appearance: none; 
+    -moz-appearance: none; 
+    border: 2px solid #eee; /* Here */
+}
+.InputsContainer input::placeholder{
+    color: #DADFE3;
+    justify-content: center;
+    align-items: center;
+    text-align:center;
+    font-size: 17px;
+    box-sizing: border-box;
+    padding: 1px;
+}
+
+.ButtonContainer {
+    flex-flow: column;
+    display: flex;
+    align-items: center;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+.Button {
+    background: #C3C8CC;
+    height: 50px !important;
+    width: 250px;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    text-align: center;
+    cursor: pointer;
+}
+
+.Button:hover {
+    background: #BDBDBD;
+    
+}

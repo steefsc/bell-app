@@ -1,23 +1,22 @@
 import React from 'react';
 import classes from './TopToolbar.css';
-import Logo from '../../Logo/Logo';
-import FaUser from 'react-icons/lib/md/face';
+
 
 
 
 const topToolbar = (props) => {
     return (
         <div className={classes.TopToolbar}>
-              <div style={{height: '48px'}}>
-                <Logo/>
+              <div style={{height: "50%"}}>
+                  <div className={classes.UserBadge}></div>
               </div>
-              <div style={{color: "white", textAlign: "center", fontSize: "13px"}}>
-                <div>
-                    <FaUser size={30}/>
-                </div>
-                <div>
-                    Steef
-                </div>
+              <div style={{height: "50%",width:"60%", justifyContent:"space-between"}}>
+                  <div className={classes.ButtonsContent}>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                        <div></div>
+                  </div>
               </div>
         </div>
     );

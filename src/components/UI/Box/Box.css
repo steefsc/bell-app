@@ -1,0 +1,80 @@
+.Box {
+  background: #fff;
+  border-radius: 2px;
+  display: inline-block;
+  height: 300px;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  position: relative;
+  width: 100%;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.25), 0 2px 2px rgba(0,0,0,0.22);
+}
+
+.Header {
+    box-sizing: border-box;
+    border-bottom: 1px solid rgba(0,0,0,0.25);
+    height: 72px;
+    padding: 16px 8px;
+    justify-content: space-between;
+    display: flex;
+}
+
+.HeaderBar {
+    display: flex;
+    align-content: center;
+    align-items: center;
+    box-sizing: border-box;
+
+}
+
+.HeaderBar h1{
+    margin: 0px;
+    font-size: 16px;
+    font-weight: bolder;
+    color: #212121;
+}
+
+.HeaderBar p{
+    margin: 1px;
+    font-size: 16px;
+    color: #757575;
+}
+
+.HeaderImage {
+    box-sizing: border-box;
+    height: 40px;
+    width: 40px;
+    border-radius: 25px;
+    margin: 1px;
+}
+
+.HeaderImage img{
+    height: 100%;
+}
+
+.HeaderContent {
+    padding-left: 25px;
+}
+
+.EditButton {
+    color: #757575;
+    vertical-align: middle;
+
+}
+
+.Content {
+    height: 190px;
+    padding: 16px 8px;
+    box-sizing: border-box;
+}
+
+.Footer {
+    height: 38px;
+    padding: 0px 8px 8px 8px;
+    box-sizing: border-box;
+    align-content: center;
+    align-content: center;
+    align-items: center;
+    display: flex;
+    float: right;
+}
