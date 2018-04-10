@@ -1,1 +1,1 @@
-# React App for currency applicatio
+# React App for currency application
